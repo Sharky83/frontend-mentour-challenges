@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Article preview component</title>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const btn = document.querySelector("#btn_share");
+      const authorContainer = document.querySelector(".author_container");
+      const socialContainer = document.querySelector(".social_container");
+
+      btn.addEventListener("click", function () {
+        authorContainer.style.display = "none";
+        socialContainer.style.display = "flex";
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <img class="article_img" src="./images/drawers.jpg" alt="">
+    </header>
+
+    <main>
+      <article>
+        <h1>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+
+        <div class="author_container">
+          <img class="author_img" src="./images/avatar-michelle.jpg" alt="image of author">
+          <div class="authored_details">
+            <h2 class="author_name">Michelle Appleton</h2>
+            <p class="authored_date">28 Jun 2020</p>
+          </div>
+          <img id="btn_share" class="svg_share" src="./images/share-icon.svg" alt="share svg">
+        </div>
+
+        <div class="social_container">
+          <p>Share</p>
+          <div class="social_icons">
+            <img src="./images/icon-facebook.svg" alt="facebook svg">
+            <img src="./images/icon-twitter.svg" alt="twitter svg">
+            <img src="./images/icon-pinterest.svg" alt="pinterest svg">
+          </div>
+          <img class="share_svg" src="./images/share-icon-2.svg" alt="share svg">
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

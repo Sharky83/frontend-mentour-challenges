@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "outfit";
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("ttf");
+}
+@font-face { 
+    font-family: "youngserif";
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
+}
+
+:root { 
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-stone-100: hsl(30, 54%, 90%);
+    --clr-stone-150: hsl(30, 18%, 87%);
+    --clr-stone-600: hsl(30, 10%, 34%);
+    --clr-stone-900: hsl(24, 5%, 18%);
+    --clr-brown-800: hsl(14, 45%, 36%);
+    --clr-rose-800: hsl(332, 51%, 32%);
+    --clr-rose-50: hsl(330, 100%, 98%);
+
+    --ff-main: "outfit";
+    --ff-heading: "youngserif";
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3 {
+    line-height: 1.2;
+    font-family: var(--ff-heading);
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--clr-rose-800);
+    margin-bottom: 1.75rem;
+ 
+}
+
+ul, ol {
+    padding: 0 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--ff-main);
+    font-weight: 400;
+    font-size: var(--ff-main);
+    line-height: 1.5;
+    color: var(--clr-stone-800);
+    background-color: var(--clr-stone-100);
+}
+
+.receipe-title {
+    font-size: 2.5rem;
+    color: var(--clr-stone-900);
+}
+
+.prep-title {
+    font-size: 1.275rem;
+    font-weight: 600;
+    color: var(--clr-rose-800);
+    margin-bottom: .5rem;
+
+}
+
+[data-cell="nutrient-value"] {
+    color: var(--clr-rose-800);
+    font-weight: var(--fw-600);
+}
+
+li {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+li::marker {
+    color: var(--clr-rose-800);
+    font-weight: 600;
+}
+
+/* layout styles */
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+
+.receipe-wrapper {
+    background-color: var(--clr-white);
+    max-width: 45em;
+    margin: 6rem 0;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem; 
+}
+
+/*  general styles */
+.receipe-img {
+    border-radius: .8rem;
+    margin-bottom: 2.5rem;
+}
+
+section {
+    margin-top: 2rem;;
+}
+
+hr {
+    color: var(--clr-stone-150);
+    margin-top: 2rem;
+}
+
+.prep-time {
+    background-color: var(--clr-rose-50);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: .8rem;
+}
+
+
+/* media query */
+
+@media (max-width:500px) {
+    .receipe-wrapper {
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .receipe-img {
+        border-radius: 0;
+        padding-bottom: 0;
+        margin-bottom:0;
+    }
+
+    .prep-time {
+        border-radius: 0;
+    }
+
+    .receipe-container {
+        padding: 2rem;
+    }
+
+    .receipe-title {
+        font-size: 2.25rem;
+    }
+
+    body {
+        background-color: var(--clr-white);
+    }
+    
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+table, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+td[data-cell="nutrient"] {
+    font-weight: bold;
+    text-align: center;
+}
+
+td[data-cell="nutrient-value"] {
+    text-align: center;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

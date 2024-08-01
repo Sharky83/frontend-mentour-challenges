@@ -1,0 +1,129 @@
+
+:root {
+--clr-primary-orange: hsl(31, 77%, 52%);
+--clr-primary-cyan: hsl(184, 100%, 22%);
+--clr-primary-dark-cyan: hsl(179, 100%, 13%);
+
+--clr--primary: hsla(0, 0%, 100%, 0.75);
+--clr-secondary: hsl(0, 0%, 95%);
+
+--font-fallback: Arial, Verdana ;
+--font-primary: "Lexend Deca", Arial, Verdana;
+--font-secondary: "Big Shoulder Display", Arial, Verdana;
+
+--fw-400: 400;
+--fw-700: 700;
+
+/* font-sizes */
+--fs-400: 1.125rem;
+--fs-500: 1.25rem;
+--fs-600: 1.5rem;
+--fs-700: 1.75rem;
+--fs-800: 2rem;
+--fs-900: 5rem;
+
+}
+
+/* simple reset */
+
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--clr-secondary);
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: var(--fw-400);
+    font-family: var(--font-primary);
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 0.625rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.card-1 {
+    background: var(--clr-primary-orange);
+
+}
+
+.card-2 {
+
+
+    background: var(--clr-primary-cyan);
+
+}
+
+.card-3 {
+    background: var(--clr-primary-dark-cyan);
+
+}
+
+.card {
+    padding: 40px;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    color: var(--clr-secondary);
+    font-size: 1.875rem
+}
+
+.card p {
+    color: var(--clr--primary);
+    line-height: 1.6;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: var(--clr--primary);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 3.75rem;
+    display: inline-block;
+    border: 2px solid var(--clr--primary);
+    transition: all .4s ease-in-out;
+}
+
+.card-1 a {
+    color: var(--clr-primary-orange);
+}
+
+.card-2 a {
+    color: var(--clr-primary-cyan);
+}
+
+.card-3 a {
+    color: var(--clr-primary-dark-cyan)
+}
+
+.card a:hover {
+    background: transparent;
+    color: var(--clr-secondary);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+}
