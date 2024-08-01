@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Sharky83/frontend-mentour-challenges/tree/main/Js/article-preview-component)
+- Live Site URL: [Vercel](https://frontend-mentour-challenges.vercel.app/Js/article-preview-component/)
 
 ## My process
 
@@ -40,7 +40,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
--Javascript
+- Javascript
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
