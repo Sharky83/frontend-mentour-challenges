@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 48%, 52%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-main: "karla", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-main);
+  background: var(--light-gray);
+}
+
+.btn {
+  background-color: var(--bright-yellow);
+  color: var(--white);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.625rem 1.25rem;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+
+  border-radius: 0.313rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+p.text_green {
+  color: var(--bright-yellow);
+  font-weight: 700;
+}
+
+.wrapper {
+  background: var(--white);
+  border-radius: 0.313rem;
+}
+
+p,
+li {
+  line-height: 1.6;
+}
+
+/* A differewnt way to select items without class names:   */
+
+.wrapper > article:first-child {
+  padding: 2rem;
+}
+
+.wrapper > article:first-child h1 {
+  color: var(--cyan);
+  margin-bottom: 1rem;
+}
+
+.wrapper > article:first-child p {
+  margin-bottom: 1rem;
+}
+
+.wrapper > article:first-child p:last-child {
+  color: var(--grayish-blue);
+}
+
+.wrapper section {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper section article {
+  padding: 2rem;
+  color: var(--white);
+}
+
+.wrapper section article:first-child {
+  background-color: var(--cyan);
+  padding-top: 2rem;
+}
+
+.wrapper section article:first-child h2 {
+  font: 2rem;
+  font-weight: 700;
+}
+
+.wrapper section article:first-child h3 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.wrapper section article:first-child h3 span {
+
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1rem 0;
+}
+
+.wrapper section article:first-child p {
+  margin-bottom: 1rem;
+}  
+
+.wrapper section article:nth-child(2) {
+  background-color: #4abfbd;
+}
+.wrapper section article:first-child h3 span {
+    margin-left: .5rem;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 700px;
+    margin: auto;
+  }
+
+  .wrapper > article:first-child h1 {
+    color: var(--cyan);
+    margin-bottom: 2rem;
+  }
+
+  .wrapper section {
+    flex-direction: row;
+  }
+
+  .wrapper section article:first-child {
+    flex: 1;
+  }
+
+  .wrapper section article:last-child {
+    flex: 1;
+  }
+}

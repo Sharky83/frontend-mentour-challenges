@@ -9,15 +9,17 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const btn = document.querySelector("#btn_share");
+      const btn_share = document.querySelector("#btn_share");
       const authorContainer = document.querySelector(".author_container");
       const socialContainer = document.querySelector(".social_container");
 
-      btn.addEventListener("click", function () {
+      btn_share.addEventListener("click", function () {
         authorContainer.style.display = "none";
         socialContainer.style.display = "flex";
       });
     });
+
+
   </script>
 </head>
 <body>
