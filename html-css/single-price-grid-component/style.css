@@ -30,6 +30,9 @@ body {
   justify-content: center;
   font-family: var(--font-main);
   background: var(--light-gray);
+  padding-inline: 2rem;
+  padding-top: 4.5rem;
+  padding-bottom: 3.875;
 }
 
 .btn {
