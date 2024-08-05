@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <main>
+        <section class="main-image">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+        </section>
+        <section class="content_section">
+            <div class="content_wrapper">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul>
+                    <li>
+                        <img src="./assets/images/icon-success.svg" class="bullet-icon" alt="">
+                        Product discovery and building what matters
+                    </li>
+                    <li>
+                        <img src="./assets/images/icon-success.svg" class="bullet-icon" alt="">
+                        Measuring to ensure updates are a success
+                    </li>
+                    <li>
+                        <img src="./assets/images/icon-success.svg" class="bullet-icon" alt="">
+                        And much more.
+                    </li>
+                </ul>
+                <form id="newsletterForm">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="fname" placeholder="email@company.com" required>
+                    <button type="submit" id="myBtn">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="myModal" class="modal">
+            <img src="./assets/images/icon-success.svg" alt="">
+            <h2>Thanks for subscribing!</h2>
+            <p>
+                A confirmation email has been sent to you. Please open it and click
+                the button inside to confirm your subscription.
+            </p>
+            <button class="close">Dismiss message</button>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
