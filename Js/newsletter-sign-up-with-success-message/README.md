@@ -25,8 +25,8 @@ the form doesnt validate email yet! this wil be added shortly.
 ![](./screenshot.jpg)
 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Sharky83/frontend-mentour-challenges/tree/main/Js/newsletter-sign-up-with-success-message)
+- Live Site URL: [Vercel](https://frontend-mentour-challenges.vercel.app/Js/newsletter-sign-up-with-success-message/)
 
 ## My process
 
