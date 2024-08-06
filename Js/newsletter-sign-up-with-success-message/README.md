@@ -25,10 +25,8 @@ the form doesnt validate email yet! this wil be added shortly.
 ![](./screenshot.jpg)
 
 
-- Solution URL: [Github](https://github.com/Sharky83/frontend-mentour-challenges/tree/main/Js/newsletter-sign-up-with-success-message)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
-
-newsletter-sign-up-with-success-message
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -44,7 +42,6 @@ newsletter-sign-up-with-success-message
 
 i learned how to create a pop up modal that could be used on a sign up ,the modal then closes with a click of a button or off the screen.
 
-i need to tidy up the css for responsiveness on tablets.
 
-and add the javascript for email validation.
+
 
